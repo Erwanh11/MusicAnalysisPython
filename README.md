@@ -1,8 +1,4 @@
-# Exercice 2 : analyse des résultats
-
-
-
-## Exercice 3 : analyse des résultats
+# Exercice 3 : analyse des résultats
 
 Biais potentiel dû à la taille du dataset :
 Les données de ce dataset couvrent une période étendue (1956-2019) avec un échantillon restreint pour les premières années. Cela pourrait introduire un biais significatif dans les moyennes, surtout pour les années où peu de chansons sont représentées.

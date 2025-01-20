@@ -1,22 +1,53 @@
-# Exercice 3 : analyse des résultats
+# Exercice 3 : Analyse des Résultats
 
-Biais potentiel dû à la taille du dataset :
-Les données de ce dataset couvrent une période étendue (1956-2019) avec un échantillon restreint pour les premières années. Cela pourrait introduire un biais significatif dans les moyennes, surtout pour les années où peu de chansons sont représentées.
-Par exemple :
+## Biais Potentiel dû à la Taille du Dataset
+Les données de ce dataset couvrent une période étendue (1956-2019) avec un échantillon restreint pour les premières années. Cela pourrait introduire un biais significatif dans les moyennes, surtout pour les années où peu de chansons sont représentées. Par exemple :
+- **1956** : Cette année ne contient qu'une poignée de chansons populaires. La moyenne reflète donc seulement quelques titres, limitant sa représentativité.
+- **2018-2019** : Les années récentes disposent probablement de davantage de données, rendant les moyennes plus robustes.
 
-1956 ne contient qu'une poignée de chansons populaires. La moyenne reflète donc seulement quelques titres, limitant sa représentativité.
-En revanche, les années récentes comme 2018 ou 2019 disposent probablement de davantage de données, rendant les moyennes plus robustes.
+## Années Clés dans l’Histoire de la Musique
+### Années 1960-1961
+Une forte augmentation des écoutes coïncide avec :
+- L’émergence du **rock and roll**.
+- La popularité croissante des artistes tels qu’**Elvis Presley**.
+- L’évolution technologique (radio, disques vinyles), qui a contribué à une plus large diffusion musicale.
 
-Années 1960-1961 :
+### Années 2017-2019
+Le pic en **2019** pourrait être attribué à :
+- La montée des plateformes de streaming comme **Spotify** et **Apple Music**, facilitant l’accès à la musique.
+- Les artistes dominants de cette période, tels qu’**Ed Sheeran**, **Drake**, et **Taylor Swift**, avec des albums à succès mondial.
 
-Une forte augmentation des écoutes coïncide avec l’émergence du rock and roll et la popularité croissante des artistes tels qu’Elvis Presley. L’évolution technologique (radio, disques vinyles) a aussi contribué à une plus large diffusion musicale.
+## Fluctuations Inattendues en 2018
+La baisse en **2018** est intrigante. Elle pourrait s’expliquer par :
+- Un nombre élevé de titres avec des scores de popularité relativement bas.
+- Une saturation du marché et une fragmentation des goûts musicaux.
 
-Années 2017-2019 :
-
-Le pic en 2019 pourrait être attribué à la montée des plateformes de streaming (Spotify, Apple Music) qui ont facilité l’accès à la musique. Les artistes tels qu’Ed Sheeran, Drake, et Taylor Swift ont dominé cette période avec des albums à succès mondial.
-
-Fluctuations inattendues en 2018 :
-
-La baisse en 2018 est intrigante, mais elle pourrait s’expliquer par un nombre élevé de titres avec des scores de popularité relativement bas. Cette période coïncide aussi avec une saturation du marché et une fragmentation des goûts musicaux.
-
+## Conclusion
 Bien que des tendances globales soient perceptibles, il est crucial de noter que ce dataset ne représente qu'une fraction de la musique produite chaque année. Des analyses supplémentaires intégrant des données externes (ventes, streams) et des contextes historiques pourraient affiner les conclusions.
+
+---
+
+# Exercice 6 : Analyse Critique des Performances du Modèle
+
+## Résultats du Modèle
+- **R² (Coefficient de détermination)** : 0.0328  
+  Ce score très faible montre que le modèle explique seulement **3,28 %** de la variance des données. Les variables utilisées (année et genre musical) sont insuffisantes pour prédire efficacement la popularité d'une chanson.
+- **MAE (Erreur absolue moyenne)** : 11.57  
+  Une erreur moyenne de **11,57** indique une différence notable entre les prédictions et les valeurs réelles, reflétant une faible précision du modèle.
+
+## Limites et Observations
+1. **Manque de Variables Explicatives**  
+   Les variables disponibles (année et genre) ne capturent pas les facteurs complexes qui influencent la popularité musicale, comme :
+   - Les préférences des auditeurs.
+   - Les campagnes marketing.
+   - Les tendances sociales.
+
+2. **Impact des Genres Musicaux**  
+   L'encodage numérique des genres (**LabelEncoder**) simplifie excessivement les relations complexes entre les différents styles musicaux. Par exemple :
+   - Des genres similaires comme le **pop** et le **rock** peuvent avoir des influences distinctes sur la popularité.
+
+3. **Biais des Données**  
+   Le dataset semble se concentrer uniquement sur les chansons populaires, excluant les morceaux moins écoutés. Cela réduit la diversité des exemples et limite les informations exploitables.
+
+## Conclusion
+Avec un **R² de 0.0328** et un **MAE de 11.57**, le modèle actuel a des performances faibles, illustrant que les variables utilisées n'expliquent qu'une petite partie de la popularité des chansons. Des améliorations significatives sont nécessaires pour obtenir des prédictions plus précises.

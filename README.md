@@ -51,3 +51,40 @@ Bien que des tendances globales soient perceptibles, il est crucial de noter que
 
 ## Conclusion
 Avec un **R² de 0.0328** et un **MAE de 11.57**, le modèle actuel a des performances faibles, illustrant que les variables utilisées n'expliquent qu'une petite partie de la popularité des chansons. Des améliorations significatives sont nécessaires pour obtenir des prédictions plus précises.
+
+# Projet : Analyse de la Popularité Musicale
+
+Ce projet explore les tendances de la popularité musicale en utilisant un dataset contenant des informations sur les chansons de 1956 à 2019. Chaque exercice se concentre sur une analyse ou un modèle spécifique pour mieux comprendre les données ou prédire la popularité des chansons.
+
+---
+
+## Structure des Fichiers
+
+- `exercice1.py` : Analyse des colonnes disponibles et exploration initiale des données.
+- `exercice2.py` : Visualisation des moyennes annuelles de popularité.
+- `exercice3.py` : Analyse des résultats avec une perspective critique sur les tendances.
+- `exercice4.py` : Préparation des données pour une modélisation simple.
+- `exercice5.py` : Implémentation d'un modèle de régression linéaire pour prédire la popularité.
+
+
+---
+
+## Instructions pour Utiliser le Projet
+
+### Pré-requis
+1. **Environnement Python** : Assurez-vous d'avoir Python 3.7 ou supérieur installé.
+2. **Bibliothèques nécessaires** :
+   - pandas
+   - matplotlib
+   - scikit-learn
+   - joblib
+   - tabulate
+
+Installez-les avec la commande suivante si nécessaire :
+```bash
+pip install pandas matplotlib scikit-learn joblib tabulate
+
+Structure des Dossiers :
+data/Spotify-2000.csv : Dataset utilisé.
+models/ : Contiendra le modèle sauvegardé après l'exécution de l'exercice 5.
+visuals/ : Contiendra les graphiques générés.
